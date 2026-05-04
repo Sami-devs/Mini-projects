@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* exact 20px distance */
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* Center Content */
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Box */
+#insert {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    text-align: center;
+    min-width: 300px;
+}
+
+/* Initial Text */
+.key {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table Header */
+th {
+    background: #00d4ff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Table Data */
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Row hover */
+tr:hover td {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Highlight Key Box */
+.color {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
