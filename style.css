@@ -1,0 +1,55 @@
+.container{
+    width: 90%;
+    max-width: 500px;
+    min-height: 350px;
+
+    padding: 50px 40px;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 299px;
+
+    gap: 18px;
+
+    transition: 0.3s ease;
+}
+
+.container:hover{
+    transform: translateY(-8px) scale(1.02);
+}
+
+img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38bdf8;
+}
+
+#count{
+    font-size: 52px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+#followers{
+    font-size: 32px;
+    color: #38bdf8;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
